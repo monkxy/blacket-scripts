@@ -6,7 +6,7 @@
     if (!blacket.packs[selection]) {
         return alert("That pack was not found.")
     }
-    let amount = prompt('How many packs do you want to open?\n\nYou can also use * to open as many as you can afford.')
+    let amount = prompt('How many packs do you want to open?\n\nYou can also use * to open as many as you can purchase.')
     if (amount.toString() === '*') {
         amount = Math.floor(blacket.user.tokens / blacket.packs[selection].price)
     }
