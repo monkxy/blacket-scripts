@@ -53,18 +53,7 @@
                 return;
             }
             opened++;
-            console.log(
-                '%c' +
-                res.blook +
-                ' (' +
-                opened +
-                '/' +
-                amount +
-                ')',
-                'font-size: 20px; color: white; text-shadow: 0px 0px 15px ' +
-                blacket.rarities[blacket.blooks[res.blook].rarity].color +
-                '; font-family: monospace;'
-            );
+            console.log('%c' + res.blook + ' (' + opened + '/' + amount + ')', 'font-size: 20px; color: white; text-shadow: 0px 0px 15px ' + blacket.rarities[blacket.blooks[res.blook].rarity].color + '; font-family: monospace;');
             blooks.push(res.blook);
         });
     }
