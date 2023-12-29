@@ -20,14 +20,14 @@
         amount = prompt(
             "How many packs do you want to open?\n\nYou can also use * to open as many as you can purchase."
         );
-            amount = Math.floor(blacket.user.tokens / blacket.packs[selection].price);
-        }
-        if (isNaN(amount) || amount < 0) {
-            alert("That is not a valid amount");
-        } else if (amount < 1 || amount * blacket.packs[selection].price > blacket.user.tokens) {
-            alert("You cannot afford that many packs");
-        }
+        amount = Math.floor(blacket.user.tokens / blacket.packs[selection].price);
     }
+    if (isNaN(amount) || amount < 0) {
+        alert("That is not a valid amount");
+    } else if (amount < 1 || amount * blacket.packs[selection].price > blacket.user.tokens) {
+        alert("You cannot afford that many packs");
+    }
+
     let speed = "";
     while (isNaN(speed) || speed < 125) {
         speed = Number.parseInt(
