@@ -47,7 +47,7 @@
         const data = {
             pack: pack
         };
-        await blacket.requests.post("/worker2/open", data, (res) => {
+        await blacket.requests.post("/worker3/open", data, (res) => {
             if (res.error) {
                 return;
             }
